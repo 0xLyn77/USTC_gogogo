@@ -1,0 +1,51 @@
+# ========================
+# macOS / 系统文件
+# ========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+
+# ========================
+# 编辑器 / IDE
+# ========================
+.zed/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ========================
+# PDF 资料（避免仓库体积过大）
+# ========================
+*.pdf
+*.PDF
+
+# ========================
+# C / C++ 编译产物（408）
+# ========================
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+*.d
+*.dSYM/
+build/
+compile_commands.json
+
+# 当前已有的无后缀可执行文件
+/408/DS/graph_search/DFS/dfs
+/408/DS/graph_search/BFS/bfs
+/408/DS/aov_net/topological_sort
+/408/DS/graph_applications/shortest_path/shortest_path
+
+# ========================
+# 临时与日志文件
+# ========================
+*.log
+*.tmp
