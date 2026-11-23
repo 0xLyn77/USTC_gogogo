@@ -22,6 +22,6 @@ In the future, robots will be widely used in many aspects of our daily life. For
 
 On campus, robots will also be increasingly used. For instance, cleaning robots can keep restrooms clean, teaching robots can provide academic guidance, and delivery robots can bring us packages and takeout.
 
-Ato that time, robot technology and production lines will be highly efficient, but we should also be aware of the need to focus on debugging and repair. If a robot goes out of control, it will be very dangrous for everyone nearby.
+At that time, robot technology and production lines will be highly efficient, but we should also be aware of the need to focus on debugging and repair. If a robot goes out of control, it will be very dangrous for everyone nearby.
 
 To move into this new stage of robotic campus life, it is important for us to concentrate on the development of robots and pay more attention to maintenance and debugging technologies.

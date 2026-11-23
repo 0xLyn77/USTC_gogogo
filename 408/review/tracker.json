@@ -1,0 +1,253 @@
+{
+  "config": {
+    "daily_quota": {
+      "choice": 3,
+      "free_response": 1
+    },
+    "seal_latest_years": 5,
+    "spaced_intervals_days": [1, 3, 7, 15, 30],
+    "source_ratio": {
+      "real_or_variant": 0.7,
+      "targeted_custom": 0.3
+    },
+    "topic_ratio": {
+      "due_old": 0.6,
+      "mistake_variant": 0.2,
+      "recent_new": 0.2
+    }
+  },
+  "used_real_questions": [
+    "2011-Q3",
+    "2020-Q1",
+    "2020-Q3"
+  ],
+  "subjects": {
+    "DS": {
+      "name": "数据结构",
+      "topics": [
+        {
+          "id": "ds_intro_complexity",
+          "name": "绪论与时空复杂度",
+          "status": "learned",
+          "mastery": 3,
+          "interval_idx": 1,
+          "last_review": null,
+          "next_review": "2026-11-24",
+          "keywords": ["时间复杂度", "空间复杂度", "渐近", "执行次数"]
+        },
+        {
+          "id": "ds_seq_list",
+          "name": "线性表：顺序表与顺序存储操作",
+          "status": "learned",
+          "mastery": 4,
+          "interval_idx": 1,
+          "last_review": "2026-11-23",
+          "next_review": "2026-11-26",
+          "notes": "双指针原地操作思路很稳，注意写代码时判空/边界及直接用左指针作新长度",
+          "keywords": ["顺序表", "线性表", "顺序存储"]
+        },
+        {
+          "id": "ds_linked_list",
+          "name": "线性表：单链表、双链表、循环链表与静态链表",
+          "status": "learned",
+          "mastery": 3,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-24",
+          "keywords": ["链表", "头结点", "双链表", "循环链表"]
+        },
+        {
+          "id": "ds_stack",
+          "name": "栈、共享栈与表达式求值",
+          "status": "learned",
+          "mastery": 3,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-24",
+          "keywords": ["栈", "出栈序列", "后缀表达式", "中缀", "共享栈"]
+        },
+        {
+          "id": "ds_queue",
+          "name": "队列、循环队列与双端队列",
+          "status": "weak",
+          "mastery": 2,
+          "interval_idx": 0,
+          "last_review": "2026-11-23",
+          "next_review": "2026-11-24",
+          "notes": "2011-Q3 踩坑：rear 指向队尾元素（实位）时须先移指针再存元素，初始 (0, n-1)",
+          "keywords": ["队列", "循环队列", "front", "rear", "出队序列"]
+        },
+        {
+          "id": "ds_array_matrix",
+          "name": "多维数组地址计算与特殊矩阵压缩存储",
+          "status": "weak",
+          "mastery": 2,
+          "interval_idx": 0,
+          "last_review": "2026-11-23",
+          "next_review": "2026-11-24",
+          "notes": "2020-Q1 靠模糊印象答对，需用三步法巩固对称转换 + 按行/按列 + 0/1 起始下标",
+          "keywords": ["对称矩阵", "三对角", "三角矩阵", "按行优先", "按列优先", "二维数组"]
+        },
+        {
+          "id": "ds_string_kmp",
+          "name": "串与 KMP 模式匹配",
+          "status": "learned",
+          "mastery": 2,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-25",
+          "keywords": ["KMP", "next", "模式串", "子串"]
+        },
+        {
+          "id": "ds_binary_tree_basic",
+          "name": "二叉树性质、顺序/链式存储与遍历",
+          "status": "weak",
+          "mastery": 2,
+          "interval_idx": 0,
+          "last_review": "2026-11-23",
+          "next_review": "2026-11-24",
+          "notes": "2020-Q3 踩坑：顺序存储须按完全二叉树空位占位；审题注意“任意…至少…”取最坏情况",
+          "keywords": ["二叉树", "完全二叉树", "先序", "中序", "后序", "叶结点"]
+        },
+        {
+          "id": "ds_threaded_tree_forest",
+          "name": "线索二叉树、树与森林转换",
+          "status": "learned",
+          "mastery": 3,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-25",
+          "keywords": ["线索二叉树", "森林", "先根", "后根", "孩子兄弟"]
+        },
+        {
+          "id": "ds_huffman_dsu",
+          "name": "哈夫曼树、哈夫曼编码与并查集",
+          "status": "learned",
+          "mastery": 3,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-25",
+          "keywords": ["哈夫曼", "WPL", "前缀编码", "并查集"]
+        },
+        {
+          "id": "ds_graph_storage_traversal",
+          "name": "图：存储结构（邻接矩阵/邻接表）与 BFS/DFS",
+          "status": "weak",
+          "mastery": 1,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-24",
+          "notes": "此前潦草学过且已遗忘，建议从基础概念与小图遍历温和回炉，可联动 408/DS/graph_search",
+          "keywords": ["邻接矩阵", "邻接表", "广度优先", "深度优先", "BFS", "DFS", "连通分量"]
+        },
+        {
+          "id": "ds_graph_mst_sp",
+          "name": "图：最小生成树（Prim/Kruskal）与最短路径（Dijkstra/Floyd）",
+          "status": "weak",
+          "mastery": 1,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-25",
+          "notes": "此前潦草学过且已遗忘，可联动 408/DS/graph_applications 回炉",
+          "keywords": ["最小生成树", "Prim", "Kruskal", "Dijkstra", "Floyd", "最短路径"]
+        },
+        {
+          "id": "ds_graph_topo_aoe",
+          "name": "图：拓扑排序（AOV）与关键路径（AOE）",
+          "status": "weak",
+          "mastery": 1,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-26",
+          "notes": "此前潦草学过且已遗忘，可联动 408/DS/aov_net 与 408/DS/aoe_net 回炉",
+          "keywords": ["拓扑排序", "关键路径", "AOE", "AOV", "有向无环图", "DAG"]
+        },
+        {
+          "id": "ds_search_linear_binary",
+          "name": "查找：顺序查找、折半查找与分块查找",
+          "status": "skipped",
+          "mastery": 0,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": null,
+          "notes": "用户暂跳过查找章节，未解锁前不出题",
+          "keywords": ["折半查找", "二分查找", "判定树", "分块查找"]
+        },
+        {
+          "id": "ds_search_bst_avl_rb",
+          "name": "查找：二叉排序树（BST）、平衡二叉树（AVL）与红黑树",
+          "status": "skipped",
+          "mastery": 0,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": null,
+          "notes": "用户暂跳过查找章节，未解锁前不出题",
+          "keywords": ["二叉排序树", "平衡二叉树", "AVL", "红黑树"]
+        },
+        {
+          "id": "ds_search_b_bplus",
+          "name": "查找：B 树与 B+ 树",
+          "status": "skipped",
+          "mastery": 0,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": null,
+          "notes": "用户直接跳过 B/B+ 树，未解锁前不出题",
+          "keywords": ["B树", "B+树", "m阶"]
+        },
+        {
+          "id": "ds_search_hash",
+          "name": "查找：散列表（Hash 表、冲突解决与 ASL）",
+          "status": "learning",
+          "mastery": 2,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": "2026-11-24",
+          "notes": "当前最新学到此处，作为近期新学内容巩固",
+          "keywords": ["散列", "哈希", "装填因子", "线性探测", "拉链法"]
+        },
+        {
+          "id": "ds_sort",
+          "name": "排序（插入/希尔/快排/堆排/归并/基数/外部排序）",
+          "status": "not_started",
+          "mastery": 0,
+          "interval_idx": 0,
+          "last_review": null,
+          "next_review": null,
+          "keywords": ["排序", "堆排序", "快速排序", "归并", "希尔", "基数排序"]
+        }
+      ]
+    },
+    "CO": {
+      "name": "计算机组成原理",
+      "topics": [
+        { "id": "co_overview", "name": "计算机系统概述与性能指标", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "co_data_repr", "name": "数据的表示与运算（补码/IEEE754/ALU）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "co_memory", "name": "存储系统（主存/Cache/虚拟存储器）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "co_isa", "name": "指令系统与寻址方式", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "co_cpu", "name": "CPU 与指令流水线", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "co_bus_io", "name": "总线与 I/O 系统（中断/DMA）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null }
+      ]
+    },
+    "OS": {
+      "name": "操作系统",
+      "topics": [
+        { "id": "os_overview", "name": "操作系统概述与中断/系统调用", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "os_process", "name": "进程、线程、调度与同步互斥（PV/死锁）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "os_memory", "name": "内存管理（分页/分段/请求分页/置换）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "os_file", "name": "文件管理（索引节点/目录/磁盘调度）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "os_io", "name": "I/O 管理（缓冲/假脱机）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null }
+      ]
+    },
+    "CN": {
+      "name": "计算机网络",
+      "topics": [
+        { "id": "cn_overview", "name": "体系结构与性能指标", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "cn_physical_link", "name": "物理层与数据链路层（帧/CSMA/CD/交换机）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "cn_network", "name": "网络层（IP/子网划分/CIDR/路由协议）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "cn_transport", "name": "传输层（UDP/TCP 可靠传输/流量与拥塞控制）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null },
+        { "id": "cn_application", "name": "应用层（DNS/HTTP/SMTP/FTP）", "status": "not_started", "mastery": 0, "interval_idx": 0, "last_review": null, "next_review": null }
+      ]
+    }
+  }
+}
