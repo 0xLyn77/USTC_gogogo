@@ -8,14 +8,27 @@
 Thumbs.db
 
 # ========================
-# 编辑器 / IDE
+# 编辑器 / IDE / 语言服务缓存
 # ========================
 .zed/
 .vscode/
 .idea/
+.cache/
 *.swp
 *.swo
 *~
+
+# ========================
+# Python 缓存与环境（Skill 脚本）
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
 
 # ========================
 # PDF 资料（避免仓库体积过大）
@@ -24,8 +37,9 @@ Thumbs.db
 *.PDF
 
 # ========================
-# C / C++ 编译产物（408）
+# C / C++ 编译与运行产物（408）
 # ========================
+# 编译/链接产物与预编译头
 *.o
 *.obj
 *.out
@@ -34,15 +48,46 @@ Thumbs.db
 *.so
 *.dylib
 *.d
+*.gch
+*.pch
+*.i
+*.ii
+*.bc
+*.ll
 *.dSYM/
+
+# 构建目录与索引
 build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+.ninja_deps
+.ninja_log
 compile_commands.json
 
-# 当前已有的无后缀可执行文件
-/408/DS/graph_search/DFS/dfs
-/408/DS/graph_search/BFS/bfs
-/408/DS/aov_net/topological_sort
-/408/DS/graph_applications/shortest_path/shortest_path
+# 运行期崩溃转储、Sanitizer、覆盖率与调试历史
+core
+core.*
+vgcore.*
+asan.*
+lsan.*
+ubsan.*
+*.profraw
+*.profdata
+*.gcno
+*.gcda
+*.gcov
+.gdb_history
+.lldb_history
+
+# 408 每日一练代码区：默认忽略一切无后缀可执行文件（如 main/test/runner）与临时输出，仅跟踪源码
+.lab_meta.json
+/408/review/code/*/*
+!/408/review/code/*/*.c
+!/408/review/code/*/*.h
+!/408/review/code/*/*.md
+!/408/review/code/*/Makefile
 
 # ========================
 # 临时与日志文件
