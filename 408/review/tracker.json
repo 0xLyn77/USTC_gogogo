@@ -23,12 +23,15 @@
     }
   },
   "used_real_questions": [
+    "2010-Q42",
     "2011-Q3",
+    "2012-Q8",
     "2014-Q2",
     "2015-Q41",
     "2015-Q5",
     "2020-Q1",
-    "2020-Q3"
+    "2020-Q3",
+    "2021-Q5"
   ],
   "subjects": {
     "DS": {
@@ -53,11 +56,11 @@
           "id": "ds_seq_list",
           "name": "线性表：顺序表与顺序存储操作",
           "status": "learned",
-          "mastery": 4,
-          "interval_idx": 1,
-          "last_review": "2026-11-23",
-          "next_review": "2026-11-26",
-          "notes": "双指针原地操作思路很稳，注意写代码时判空/边界及直接用左指针作新长度",
+          "mastery": 5,
+          "interval_idx": 2,
+          "last_review": "2026-11-26",
+          "next_review": "2026-12-03",
+          "notes": "2010-Q42纯C实操7/7通过(14/15分)；三次逆置法(A^T B^T)^T=BA写稳，注意区分左移切p位与右移切n-p位，入口加p/n边界早退",
           "keywords": [
             "顺序表",
             "线性表",
@@ -117,12 +120,12 @@
         {
           "id": "ds_array_matrix",
           "name": "多维数组地址计算与特殊矩阵压缩存储",
-          "status": "weak",
-          "mastery": 2,
-          "interval_idx": 0,
-          "last_review": "2026-11-23",
-          "next_review": "2026-11-24",
-          "notes": "2020-Q1 靠模糊印象答对，需用三步法巩固对称转换 + 按行/按列 + 0/1 起始下标",
+          "status": "learned",
+          "mastery": 3,
+          "interval_idx": 1,
+          "last_review": "2026-11-26",
+          "next_review": "2026-11-29",
+          "notes": "2026-11-26变式回炉独立通过(下三角按行优先+1-indexed)，M001移入已攻克",
           "keywords": [
             "对称矩阵",
             "三对角",
@@ -184,17 +187,18 @@
         {
           "id": "ds_huffman_dsu",
           "name": "哈夫曼树、哈夫曼编码与并查集",
-          "status": "learned",
-          "mastery": 3,
+          "status": "weak",
+          "mastery": 2,
           "interval_idx": 0,
-          "last_review": null,
-          "next_review": "2026-11-25",
+          "last_review": "2026-11-26",
+          "next_review": "2026-11-27",
           "keywords": [
             "哈夫曼",
             "WPL",
             "前缀编码",
             "并查集"
-          ]
+          ],
+          "notes": "2021-Q5将WPL误算成叶权值和89，须牢记WPL=所有非叶(合并)结点权值之和"
         },
         {
           "id": "ds_graph_storage_traversal",
@@ -221,9 +225,9 @@
           "status": "weak",
           "mastery": 1,
           "interval_idx": 0,
-          "last_review": null,
-          "next_review": "2026-11-25",
-          "notes": "此前潦草学过且已遗忘，可联动 408/DS/graph_applications 回炉",
+          "last_review": "2026-11-26",
+          "next_review": "2026-11-27",
+          "notes": "2012-Q8误选仅II，用等权三角形反例牢记MST代价唯一但形态未必唯一",
           "keywords": [
             "最小生成树",
             "Prim",
